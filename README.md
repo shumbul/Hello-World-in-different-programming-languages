@@ -6,7 +6,7 @@ Let's have a look at how is the quote printed in some familiar programming langu
 BEGIN DISPLAY("HELLO WORLD!") END.
 
 **Assembly language**
-'''
+```
 global  _main
     extern  _printf
 
@@ -18,30 +18,30 @@ _main:
     ret
 message:
     db  'Hello, World', 10, 0
-'''
+```
 
 **C**
-'''
+```
 #include <stdio.h>
 
 int main(void)
 {
     printf("hello, world\n");
 }
-'''
+```
 
 **C++**
-'''
+```
 #include <iostream>
 int main()
 {
  std::cout << "Hello, world!\n";
  return 0;
 }
-'''
+```
   
-C#**
-'''
+**C#**
+```
 using System;
 class Program
 {
@@ -50,16 +50,18 @@ class Program
  Console.WriteLine("Hello, world!");
  }
 }
+```
 
-COBOL**
-'''
+**COBOL**
+```
  IDENTIFICATION DIVISION.
  PROGRAM-ID. hello-world.
  PROCEDURE DIVISION.
  DISPLAY "Hello, world!".
- 
-FORTAN**
-'''
+```
+
+**FORTAN**
+```
 program helloworld
  print *, "Hello world!"
 end program helloworld
@@ -70,8 +72,10 @@ class HelloWorldApp {
  }
 }
 
-JavaScript**
-'''
+```
+
+**JavaScript**
+```
 console.log("Hello World!");
 Machine code
 b8 21 0a 00 00 #moving "!\n" into eax
@@ -90,12 +94,16 @@ cd 80 #calling the linux kernel to execute our print to stdout
 b8 01 00 00 00 #moving "sys_exit" call number to eax
 cd 80 #executing it via linux sys_call
 
-Mathematica (Wolfram Language)**
-'''
+```
+
+**Mathematica (Wolfram Language)**
+```
 CloudDeploy["Hello, World"]
 
-MATLAB**
-'''
+```
+
+**MATLAB**
+```
 classdef hello
  methods
  function greet(this)
@@ -104,53 +112,68 @@ classdef hello
  end
 end
 
-ML**
-'''
+```
+
+**ML**
+```
 print "Hello world!\n";
 
-Node.Js**
-'''
+```
+
+**Node.Js**
+```
 console.log("Hello World!");
 
-Pascal**
-'''
+```
+
+**Pascal**
+```
 program HelloWorld(output);
 begin
  Write('Hello, world!')
 end.
 
-Perl**
-'''
+```
+
+**Perl**
+```
 print "Hello, World!\n";
 
-PHP**
-'''
+```
+
+**PHP**
+```
 <?php echo "Hello, World";
 
-Python**
-'''
+```
+
+**Python**
+```
 print("Hello World")
 
-Ruby**
-'''
+```
+
+**Ruby**
+```
 puts 'Hello World!'
 
-Rust**
-'''
+```
+
+**Rust**
+```
 fn main() {
  println!("Hello, world!");
 }
-'''
+```
 
-Scala**
-'''
+**Scala**
+```
 object HelloWorld extends App {
  println("Hello, World!")
  }
-'''
- 
-Swift**
-'''
-println("Hello, world!")
-'''
+```
 
+**Swift**
+```
+println("Hello, world!")
+```
