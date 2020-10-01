@@ -1,6 +1,6 @@
 # Hello-World
 *The very first thing you'll do when learning a new programming language is how to make the computer display "Hello, World".
-Let's have a look at how is the quote printed in some familiar programming languages- ALGOL, Assembly Language, Bash, C, C++, C#, COBOL, FORTAN, Java, JavaScript,Mathematica (Wolfram Language), Machine Code, MATLAB, ML, NODE.Js, Pascal, Perl, PHP, Python, Ruby, Rust, Scala, Swift.*
+Let's have a look at how is the quote printed in some familiar programming languages- ALGOL, Assembly Language, Bash, C, Clipper, C++, C#, COBOL, CoffeeScript, FORTAN, Java, JavaScript, Julia,Mathematica (Wolfram Language), Machine Code, MATLAB, ML, NODE.Js, Pascal, Perl, PHP, Python, R, Ruby, Rust, Scala, Swift, VisualBaisc.NET.*
 
 **ALGOL**
 ```
@@ -22,6 +22,11 @@ message:
     db  'Hello, World', 10, 0
 ```
 
+**Bash**
+```
+echo "Helloworld"
+
+```
 **C**
 ```
 #include <stdio.h>
@@ -54,6 +59,16 @@ class Program
 }
 ```
 
+**Clipper**
+```
+?"Helloworld"
+```
+
+**CoffeeScript**
+```
+console.log 'Hello, world!'
+```
+
 **COBOL**
 ```
  IDENTIFICATION DIVISION.
@@ -76,6 +91,17 @@ class HelloWorldApp {
 
 ```
 
+**Java**
+```
+public class HelloWorld 
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("Helloworld!!")
+    }
+}
+
+```
 **JavaScript**
 ```
 console.log("Hello World!");
@@ -95,6 +121,12 @@ b8 04 00 00 00 #moving "print out" syscall number to eax
 cd 80 #calling the linux kernel to execute our print to stdout
 b8 01 00 00 00 #moving "sys_exit" call number to eax
 cd 80 #executing it via linux sys_call
+
+```
+
+**Julia**
+```
+println("Hello world!")
 
 ```
 
@@ -155,6 +187,12 @@ print("Hello World")
 
 ```
 
+**R** 
+```
+cat('Hello, world!')
+
+```
+
 **Ruby**
 ```
 puts 'Hello World!'
@@ -178,4 +216,14 @@ object HelloWorld extends App {
 **Swift**
 ```
 println("Hello, world!")
+```
+
+**VisualBasic.NET**
+```
+Module Module1
+    Sub Main()
+        Console.WriteLine("Hello, world!")
+    End Sub
+End Module
+
 ```
